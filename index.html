@@ -9,10 +9,10 @@
 
         <div class="container">
             <p>Enter your text or URL</p>
-            <input type="text" placeholder="Text or URL">
+            <input type="text" placeholder="Text or URL" id="qrText">
 
             <div class="imgBox">
-                <img src="" id="qrImage">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example" id="qrImage">
             </div>
 
             <button>Generate QR Code</button>
@@ -21,7 +21,8 @@
         <script>
 
             let imgBox = document.getElementById("imgBox");
-            let qrImage = document.getElementBy("imgBox");
+            let qrImage = document.getElementBy("qrImage");
+            let qrText = document.getElementById("qrText");
 
             function generateQR(){
 
