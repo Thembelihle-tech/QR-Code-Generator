@@ -12,7 +12,7 @@
             <input type="text" placeholder="Text or URL" id="qrText">
 
             <div class="imgBox">
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example" id="qrImage">
+                <img src="" id="qrImage">
             </div>
 
             <button>Generate QR Code</button>
@@ -25,7 +25,7 @@
             let qrText = document.getElementById("qrText");
 
             function generateQR(){
-
+                qrImage.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example" + qrText.value;
             }
 
         </script>
